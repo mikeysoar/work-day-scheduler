@@ -50,3 +50,9 @@ $(document).ready(function () {
 
     trackTime();
 })
+// want accurate time refresh time
+setInterval(function() {
+$(".currentTime").html(function() {
+    refresh();
+});
+}, 1000);
